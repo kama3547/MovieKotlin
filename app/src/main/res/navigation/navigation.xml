@@ -6,6 +6,15 @@
     app:startDestination="@id/movieFragment">
 
     <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="com.example.moviekotlin.ui.detailFragment.DetailMovieFragment"
+        android:label="DetailMovieFragment" />
+    <fragment
+        android:id="@+id/fragmentCheckInternet"
+        android:name="com.example.moviekotlin.ui.fragmentCheckInternet.FragmentCheckInternet"
+        android:label="fragment_check_internet"
+        tools:layout="@layout/fragment_check_internet" />
+    <fragment
         android:id="@+id/movieFragment"
         android:name="com.example.moviekotlin.ui.fragments.MovieFragment"
         android:label="fragment_movie"
@@ -14,8 +23,4 @@
             android:id="@+id/action_movieFragment_to_detailMovieFragment"
             app:destination="@id/detailMovieFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/detailMovieFragment"
-        android:name="com.example.moviekotlin.ui.detailFragment.DetailMovieFragment"
-        android:label="DetailMovieFragment" />
 </navigation>

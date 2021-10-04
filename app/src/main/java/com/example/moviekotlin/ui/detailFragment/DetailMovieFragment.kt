@@ -23,7 +23,7 @@ class DetailMovieFragment :
         viewModel.movie.observe(requireActivity(), {
             binding.detailImage.load(it.image.original)
             binding.detailTxt.text = it.name
-            binding.txtRating.text = it.rating.toString()
+            binding.txtRating.text = it.rating.average.toString()
             binding.txtLange.text = it.language
             binding.end.text = it.ended
             binding.txtPremiered.text = it.premiered

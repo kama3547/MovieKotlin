@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 
-abstract class BaseFragment<Binding : ViewBinding>  (private val inflate: (LayoutInflater,ViewGroup,Boolean)-> Binding) : Fragment(){
+abstract class BaseFragment<Binding : ViewBinding>
+    (private val inflate: (LayoutInflater,ViewGroup,Boolean)-> Binding) : Fragment(){
     private var _binding: Binding? = null
     val binding get() = _binding!!
 
@@ -23,4 +24,10 @@ abstract class BaseFragment<Binding : ViewBinding>  (private val inflate: (Layou
     }
     open fun setupView(){}
     open fun initVM(){}
+    open fun checkInternet(){}
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
