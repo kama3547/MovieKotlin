@@ -20,6 +20,7 @@ abstract class BaseFragment<Binding : ViewBinding>
         _binding = container?.let { inflate.invoke(layoutInflater, it, false) }
         setupView()
         initVM()
+        checkInternet()
         return _binding?.root
     }
     open fun setupView(){}

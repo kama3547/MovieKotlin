@@ -25,19 +25,19 @@ class MovieFragment : BaseFragment<FragmentMovieBinding>(FragmentMovieBinding::i
     private val viewModel: MovieViewModel by viewModels()
 
     override fun initVM() {
-        NetworkConnection(context?: return).observe(viewLifecycleOwner,{connect->
-            if(connect){
-        viewModel.getMovie()
-        viewModel.moviesList.observe(this, {
-            binding.movieRv.apply {
-                adapter = MovieAdapter(it, this@MovieFragment::openDetailMovie)
-                layoutManager = GridLayoutManager(requireContext(), 2)
+        NetworkConnection(requireActivity().application).observe(viewLifecycleOwner, { connect ->
+            if (connect) {
+                viewModel.getMovie()
+                viewModel.moviesList.observe(this, {
+                    binding.movieRv.apply {
+                        adapter = MovieAdapter(it, this@MovieFragment::openDetailMovie)
+                        layoutManager = GridLayoutManager(requireContext(), 2)
+                    }
+                })
+            } else {
+                findNavController().navigate(R.id.fragmentCheckInternet)
             }
         })
-        }else{
-            findNavController().navigate(R.id.fragmentCheckInternet)
-        }
-    })
     }
 
     private fun openDetailMovie(id: Int) {
