@@ -1,8 +1,8 @@
 package com.example.moviekotlin.api
 
 import com.example.moviekotlin.model.Movie
-import com.example.moviekotlin.utils.Constants.SHOWS_END_POINT
-import com.example.moviekotlin.utils.Constants.SHOWS_END_POINT_ID
+import com.example.moviekotlin.utils.constants.Constants.SHOWS_END_POINT
+import com.example.moviekotlin.utils.constants.Constants.SHOWS_END_POINT_ID
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

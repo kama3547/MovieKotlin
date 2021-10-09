@@ -13,7 +13,8 @@ import com.example.moviekotlin.base.BaseFragment
 import com.example.moviekotlin.databinding.FragmentCheckInternetBinding
 import com.example.moviekotlin.ui.networkCheck.NetworkConnection
 
-class FragmentCheckInternet : BaseFragment<FragmentCheckInternetBinding>(FragmentCheckInternetBinding::inflate) {
+class FragmentCheckInternet :
+    BaseFragment<FragmentCheckInternetBinding>(FragmentCheckInternetBinding::inflate) {
 
     override fun checkInternet() {
         NetworkConnection(requireActivity().application).observe(viewLifecycleOwner, { connect ->
@@ -22,7 +23,6 @@ class FragmentCheckInternet : BaseFragment<FragmentCheckInternetBinding>(Fragmen
             }
         })
     }
-
 
 
 }

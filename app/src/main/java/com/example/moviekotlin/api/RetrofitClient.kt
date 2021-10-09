@@ -1,6 +1,6 @@
 package com.example.moviekotlin.api
 
-import com.example.moviekotlin.utils.Constants.BASE_URL
+import com.example.moviekotlin.utils.constants.Constants.BASE_URL
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

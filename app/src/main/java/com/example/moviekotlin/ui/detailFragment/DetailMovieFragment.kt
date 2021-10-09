@@ -7,10 +7,11 @@ import com.example.moviekotlin.base.BaseFragment
 import com.example.moviekotlin.databinding.DetailMovieFragmentBinding
 import com.example.moviekotlin.ui.adapters.MovieAdapter
 import com.example.moviekotlin.ui.viewModel.DetailViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class DetailMovieFragment :
     BaseFragment<DetailMovieFragmentBinding>(DetailMovieFragmentBinding::inflate) {
-    private val viewModel: DetailViewModel by viewModels()
+    private val viewModel: DetailViewModel by viewModel()
 
     override fun setupView() {
         arguments.let {

@@ -21,12 +21,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/noConnect"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
         android:text="No Internet Access"
-        android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="26sp"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"/>
+        android:textStyle="bold" />
 
 </RelativeLayout>

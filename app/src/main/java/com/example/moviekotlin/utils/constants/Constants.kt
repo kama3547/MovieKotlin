@@ -1,4 +1,4 @@
-package com.example.moviekotlin.utils
+package com.example.moviekotlin.utils.constants
 
 object Constants {
     const val BASE_URL = "https://api.tvmaze.com/"

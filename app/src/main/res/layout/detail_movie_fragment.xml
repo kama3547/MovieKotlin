@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/dark_blue"
-    >
+    android:background="@color/dark_blue">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -67,6 +66,7 @@
             android:layout_marginEnd="50dp"
             android:text="Premiered"
             android:textColor="@color/light_gray" />
+
         <TextView
             android:id="@+id/schedule"
             android:layout_width="match_parent"
@@ -96,6 +96,7 @@
             android:layout_marginEnd="50dp"
             android:text="Url"
             android:textColor="@color/light_gray" />
+
         <TextView
             android:id="@+id/off_site"
             android:layout_width="match_parent"
@@ -105,6 +106,7 @@
             android:layout_marginEnd="50dp"
             android:text="Off site"
             android:textColor="@color/light_gray" />
+
         <TextView
             android:id="@+id/uptated"
             android:layout_width="match_parent"
@@ -114,6 +116,7 @@
             android:layout_marginEnd="50dp"
             android:text="Updated"
             android:textColor="@color/light_gray" />
+
         <TextView
             android:id="@+id/links"
             android:layout_width="match_parent"
@@ -163,6 +166,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="520dp"
             android:textColor="@color/white" />
+
         <TextView
             android:id="@+id/txt_off_site"
             android:layout_width="match_parent"
@@ -170,6 +174,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="570dp"
             android:textColor="@color/white" />
+
         <TextView
             android:id="@+id/txt_update"
             android:layout_width="match_parent"
@@ -177,6 +182,7 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="615dp"
             android:textColor="@color/white" />
+
         <TextView
             android:id="@+id/txt_links"
             android:layout_width="match_parent"
@@ -256,6 +262,7 @@
             android:layout_marginTop="560dp"
             android:layout_marginEnd="20dp"
             android:background="@color/light_gray" />
+
         <View
             android:layout_width="wrap_content"
             android:layout_height="2dp"
@@ -263,6 +270,7 @@
             android:layout_marginTop="610dp"
             android:layout_marginEnd="20dp"
             android:background="@color/light_gray" />
+
         <View
             android:layout_width="wrap_content"
             android:layout_height="2dp"
@@ -272,11 +280,11 @@
             android:background="@color/light_gray" />
 
         <TextView
-            android:layout_marginTop="700dp"
-            android:textSize="60dp"
-            android:text=""
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="700dp"
+            android:text=""
+            android:textSize="60dp" />
 
     </androidx.cardview.widget.CardView>
 
